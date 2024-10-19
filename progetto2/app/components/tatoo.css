@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+body {
+  background: #f3f1ec;
+
+  .tatoo-page body header html p h1 h2 h3{
+    font-family: 'EB Garamond', serif;
+  }
+  
+}
+svg {
+  width: 84px;
+  fill: #800000;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.instructions {
+  font-size: 0.3em;
+}
+button {
+  background: #f3f1ec;
+  border: 2px solid #800000;
+  color: #800000;
+  padding: .6em 1.2em;
+  padding-bottom: .9em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  font-family: 'EB Garamond', serif;
+  font-size: .45em;
+  -webkit-transition: background .15s, color .15s;
+  transition: background .15s, color .15s;
+}
+button:hover {
+  background: #800000;
+  color: white;
+}
+button:active {
+  background: white;
+  color: #800000;
+  border-color: white;
+}
+button:focus {
+  outline: 0;
+}
+#wrapBox {
+  position: relative;
+  text-align: center;
+  font-size: 3em;
+  height: 80vh;
+}
+#toBeCentered {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  right: 0%;
+  min-width: 800px;
+  height: 200px;
+  margin-top: -100px;
+}
+#generatedText {
+  color: #c3c1bd;
+  margin-top: .2em;
+}
+#generatedText span {
+  border-bottom: 1px solid #800000;
+  display: inline-block;
+  padding-bottom: .05em;
+  -webkit-transition: border-bottom .15s;
+  transition: border-bottom .15s;
+}
+#generatedText span:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+@media only screen and (max-width: 800px) {
+  #toBeCentered {
+    width: 100%;
+    min-width: 0px;
+  }
+  #wrapBox {
+    font-size: 2em;
+  }
+  button {
+    font-size: .55em;
+  }
+}
